@@ -1,0 +1,29 @@
+/* define colors as CSS variables */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #e74c3c;
+    --input-border-color: #ccc;
+  }
+
+.container, .container form, .input_label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container form{
+    width:35rem;
+}
+
+.input_label{
+    align-items: flex-start;
+}
+
+.input_label input{
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid var(--input-border-color);
+    border-radius: 8px;
+}
