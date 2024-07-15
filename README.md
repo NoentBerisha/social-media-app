@@ -5,5 +5,5 @@
     Example: LoginView/SMF.
 </p>
 <p>
-    Pull the message should reflect the current task from <a href="https://github.com/users/NoentBerisha/projects/1/views/1">BackLog</a> to maintain project cleanliness.
+    The message should reflect the current task from <a href="https://github.com/users/NoentBerisha/projects/1/views/1">BackLog</a> to maintain project cleanliness.
 </p>
