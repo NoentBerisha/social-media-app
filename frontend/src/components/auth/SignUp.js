@@ -25,7 +25,11 @@ function SignUp() {
     e.preventDefault();
     if (password !== confirmPassword) {
       toast.error("Passwords do not match");
-    } else {
+    } 
+    else if (!(password.length >= 8 && password.match(/[a-z]/) && password.match(/[A-Z]/) && password.match(/[0-9]/) && password.match(/[^a-zA-Z\d]/))) {
+      toast.error("Password must be at least 8 characters long and contain at least one lowercase letter, one uppercase letter, one digit, and one special character");
+    }
+    else {
       //define the sign up function
 
       console.log("username is: ", username);
@@ -47,6 +51,7 @@ function SignUp() {
             type="text"
             id="username"
             name="username"
+            required
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
@@ -58,6 +63,7 @@ function SignUp() {
             type="email"
             id="email"
             name="email"
+            required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -71,6 +77,7 @@ function SignUp() {
               id="password"
               name="password"
               value={password}
+              required
               onChange={(e) => setPassword(e.target.value)}
             />
             <FontAwesomeIcon
@@ -88,6 +95,7 @@ function SignUp() {
               type={isConfirmPasswordVisible ? "text" : "password"}
               id="password2"
               name="password2"
+              required
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
             />
@@ -100,11 +108,12 @@ function SignUp() {
         </span>
 
         <button type="submit">Sign Up</button>
-      </form>
-
-      <p>
+        <p>
         Already have an Account? <a href="">Sign in</a>
       </p>
+      </form>
+
+      
     </div>
   );
 }
