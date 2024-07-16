@@ -6,12 +6,12 @@ function Login() {
       <form>
       <h2>Login to your account</h2> 
         <div className="input_label">
-          <label htmlFor="username">Username</label>
+          <label for="username">Username</label>
           <input type="text" id="username" name="username" />
         </div>
 
         <div className="input_label">
-          <label htmlFor="password">Password</label>
+          <label for="password">Password</label>
           <input type="password" id="password" name="password" />
         </div>
 
