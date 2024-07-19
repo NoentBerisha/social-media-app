@@ -1,12 +1,15 @@
 import "./Login.css";
+import { useNavigate, Link } from 'react-router-dom';
 
-function Login({ setCurrentView }) {
+function Login() {
+  const navigate = useNavigate();
+
   const handleForgotPassword = () => {
-    setCurrentView('forgotPassword');
+    navigate('/ForgotPassword');
   };
 
   const handleSignUp = () => {
-    setCurrentView('signUp');
+    navigate('/SignUp');
   };
 
   return (
@@ -15,12 +18,12 @@ function Login({ setCurrentView }) {
         <h2>Login to your account</h2>
 
         <div className="input_label">
-          <label for="username">Username</label>
+          <label htmlFor="username">Username</label>
           <input type="text" id="username" name="username" />
         </div>
 
         <div className="input_label">
-          <label for="password">Password</label>
+          <label htmlFor="password">Password</label>
           <input type="password" id="password" name="password" />
         </div>
 
@@ -28,8 +31,10 @@ function Login({ setCurrentView }) {
           <label>
             <input type="checkbox" /> Remember me
           </label>
-          <div className="forgot_password" onClick={handleForgotPassword}>
+          <div className="forgot_password">
+            <Link to='/ForgotPassword'>
             Forgot password
+            </Link>
           </div>
         </div>
 
@@ -37,7 +42,7 @@ function Login({ setCurrentView }) {
 
         <div className="register_link">
           <p>
-            Don't have an account? <span onClick={handleSignUp} className="sign_up_link">Sign up</span>
+            Don't have an account? <Link to="/SignUp">Sign up</Link>
           </p>
         </div>
       </form>

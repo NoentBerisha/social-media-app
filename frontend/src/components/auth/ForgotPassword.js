@@ -1,13 +1,14 @@
 import "./Auth.css";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
+import { Link } from 'react-router-dom';
 
 function ForgotPasswordView() {
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // should have some logic here which will be added later with the API's to hanlde the email confirmation.
+    // should have some logic here which will be added later with the API's to handle the email confirmation.
     console.log("Password reset email sent to: ", email);
     toast.success("Password reset email sent successfully");
   };
@@ -31,7 +32,7 @@ function ForgotPasswordView() {
 
         <button type="submit">Send Reset Link</button>
         <p>
-          Remember your password? <a href="/signin">Sign in</a>
+          Remember your password? <Link to="/">Sign in</Link>
         </p>
       </form>
     </div>
