@@ -1,10 +1,19 @@
 import "./Login.css";
 
-function Login() {
+function Login({ setCurrentView }) {
+  const handleForgotPassword = () => {
+    setCurrentView('forgotPassword');
+  };
+
+  const handleSignUp = () => {
+    setCurrentView('signUp');
+  };
+
   return (
     <div className="container">
       <form>
-      <h2>Login to your account</h2> 
+        <h2>Login to your account</h2>
+
         <div className="input_label">
           <label for="username">Username</label>
           <input type="text" id="username" name="username" />
@@ -16,16 +25,21 @@ function Login() {
         </div>
 
         <div className="remember_me">
-          <label><input type="checkbox"/>Remember me</label>
-          <a href="#">Forgot password </a>
+          <label>
+            <input type="checkbox" /> Remember me
+          </label>
+          <div className="forgot_password" onClick={handleForgotPassword}>
+            Forgot password
+          </div>
         </div>
 
         <button type="submit">Login</button>
 
-        <div className ="register_link">
-            <p>Don't have an account? <a href ="#">Sign up</a> </p>
+        <div className="register_link">
+          <p>
+            Don't have an account? <span onClick={handleSignUp} className="sign_up_link">Sign up</span>
+          </p>
         </div>
-     
       </form>
     </div>
   );
