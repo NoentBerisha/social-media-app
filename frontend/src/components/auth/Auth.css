@@ -1,4 +1,5 @@
-/* define colors as CSS variables */
+/* 
+
 :root {
     --primary-color: #3498db;
     --secondary-color: #2ecc71;
@@ -27,3 +28,4 @@
     border: 1px solid var(--input-border-color);
     border-radius: 8px;
 }
+*/

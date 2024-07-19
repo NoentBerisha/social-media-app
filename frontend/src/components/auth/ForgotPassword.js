@@ -29,9 +29,12 @@ function ForgotPasswordView() {
             onChange={(e) => setEmail(e.target.value)}
           />
         </span>
-
         <button type="submit">Send Reset Link</button>
-        <p>
+        <p style={{
+          borderTop: '1px solid #ccc',
+          margin: '20px 0',
+          paddingTop: '10px',
+        }}>
           Remember your password? <Link to="/">Sign in</Link>
         </p>
       </form>
