@@ -1,4 +1,3 @@
-/* define colors as CSS variables */
 :root {
     --primary-color: #3498db;
     --secondary-color: #2ecc71;
@@ -9,24 +8,24 @@
     --signup-login-text: #fff;
 }
 
-.container,
-.container form,
-.input_label {
+.sign_up_container,
+.sign_up_container form,
+.sign_up_input_label {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.container form {
-    width: 20rem;
+.sign_up_container form {
+    width: 420px;
     padding: 3rem;
     border-radius: 8px;
     border: solid 1px rgb(185, 185, 185);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-.container form button {
+.sign_up_container form button {
     background-color: var(--signup-login-button);
     color: var(--signup-login-text);
     border: none;
@@ -37,15 +36,17 @@
     cursor: pointer;
 }
 
-.input_label {
+.sign_up_input_label {
     align-items: flex-start;
     margin-bottom: 0.5rem;
     width: 100%;
 }
 
-.input_label input {
+.sign_up_input_label input {
     width: 100%;
-    padding: 0.5rem;
+    padding: 15px 45px 15px 10px;
+    font-size: 16px;
+    outline: none;
     margin: 0.5rem 0;
     border: none;
     border-radius: 5px;
@@ -56,11 +57,11 @@
     width: 100%;
 }
 
-.input_label label {
-    font-size: small;
+.sign_up_input_label label {
+    font-size: medium;
 }
 
-.container a {
+.sign_up_container a {
     color: var(--primary-color);
     text-decoration: none;
     margin-top: 1rem;
@@ -68,7 +69,7 @@
 
 .icon-eye {
     position: absolute;
-    right: 0px;
+    right: 2px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
