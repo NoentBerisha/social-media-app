@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { toast } from "react-toastify";
-import { useNavigate, Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 
 function SignUp() {
   const [username, setUsername] = useState("");
@@ -12,7 +12,7 @@ function SignUp() {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   const [isConfirmPasswordVisible, setIsConfirmPasswordVisible] = useState(false);
-  // const navigate = useNavigate();
+ 
 
   const togglePasswordVisibility = (number) => {
     if (number === 1) {

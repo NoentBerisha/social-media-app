@@ -1,17 +1,7 @@
 import "./Login.css";
-import { useNavigate, Link } from 'react-router-dom';
+import {Link } from 'react-router-dom';
 
 function Login() {
-  const navigate = useNavigate();
-
-  const handleForgotPassword = () => {
-    navigate('/ForgotPassword');
-  };
-
-  const handleSignUp = () => {
-    navigate('/SignUp');
-  };
-
   return (
     <div className="container">
       <form>

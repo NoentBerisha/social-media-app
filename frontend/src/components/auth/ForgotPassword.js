@@ -15,12 +15,19 @@ function ForgotPasswordView() {
 
   return (
     <div className="container">
-      <h1>Forgot Password</h1>
-
+      <h1 style={{
+          display:"flex",
+          alignItems:"center",
+          justifyContent:"center",
+          }}>Forgot Password</h1>
+      <br></br>
+      <br></br>
       <form onSubmit={handleSubmit}>
         <span className="input_label">
           <label htmlFor="email">Email</label>
-          <input
+          <input style={{
+            borderRadius:"10px"
+          }}
             type="email"
             id="email"
             name="email"
@@ -32,12 +39,15 @@ function ForgotPasswordView() {
         <button type="submit">Send Reset Link</button>
         <p
           style={{
-            borderTop: "1px solid #ccc",
             margin: "20px 0",
             paddingTop: "10px",
           }}
+          
         >
-          Remember your password? <Link to="/">Sign in</Link>
+          Remember your password? <Link style={{
+           color:"#ea9e24",
+           textDecoration:"none",
+          }}to="/">Sign in</Link>
         </p>
       </form>
     </div>
