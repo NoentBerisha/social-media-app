@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { toast } from "react-toastify";
+import { useNavigate, Link } from "react-router-dom";
 
 function SignUp() {
   const [username, setUsername] = useState("");
@@ -11,6 +12,7 @@ function SignUp() {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   const [isConfirmPasswordVisible, setIsConfirmPasswordVisible] = useState(false);
+  // const navigate = useNavigate();
 
   const togglePasswordVisibility = (number) => {
     if (number === 1) {
@@ -25,11 +27,19 @@ function SignUp() {
     e.preventDefault();
     if (password !== confirmPassword) {
       toast.error("Passwords do not match");
-    } 
-    else if (!(password.length >= 8 && password.match(/[a-z]/) && password.match(/[A-Z]/) && password.match(/[0-9]/) && password.match(/[^a-zA-Z\d]/))) {
-      toast.error("Password must be at least 8 characters long and contain at least one lowercase letter, one uppercase letter, one digit, and one special character");
-    }
-    else {
+    } else if (
+      !(
+        password.length >= 8 &&
+        password.match(/[a-z]/) &&
+        password.match(/[A-Z]/) &&
+        password.match(/[0-9]/) &&
+        password.match(/[^a-zA-Z\d]/)
+      )
+    ) {
+      toast.error(
+        "Password must be at least 8 characters long and contain at least one lowercase letter, one uppercase letter, one digit, and one special character"
+      );
+    } else {
       //define the sign up function
 
       console.log("username is: ", username);
@@ -41,12 +51,12 @@ function SignUp() {
   };
 
   return (
-    <div className="container">
-      <h1>Create an Account</h1>
-
+    <div className="sign_up_container">
       <form onSubmit={handleSubmit}>
-        <span className="input_label">
-          <label htmlFor="username">User Name</label>
+        <h1>Create an Account</h1>
+        <br></br>
+        <span className="sign_up_input_label">
+          <label htmlFor="username">Username</label>
           <input
             type="text"
             id="username"
@@ -57,7 +67,7 @@ function SignUp() {
           />
         </span>
 
-        <span className="input_label">
+        <span className="sign_up_input_label">
           <label htmlFor="email">Email</label>
           <input
             type="email"
@@ -69,7 +79,7 @@ function SignUp() {
           />
         </span>
 
-        <span className="input_label">
+        <span className="sign_up_input_label">
           <label htmlFor="password">Password</label>
           <div className="password" style={{ position: "relative" }}>
             <input
@@ -88,7 +98,7 @@ function SignUp() {
           </div>
         </span>
 
-        <span className="input_label">
+        <span className="sign_up_input_label">
           <label htmlFor="password2">Confirm Password</label>
           <div className="password" style={{ position: "relative" }}>
             <input
@@ -108,12 +118,11 @@ function SignUp() {
         </span>
 
         <button type="submit">Sign Up</button>
+        <br></br>
         <p>
-        Already have an Account? <a href="">Sign in</a>
-      </p>
+          Already have an Account? <Link to="/">Log in</Link>
+        </p>
       </form>
-
-      
     </div>
   );
 }

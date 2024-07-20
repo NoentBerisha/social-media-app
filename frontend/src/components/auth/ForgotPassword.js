@@ -1,7 +1,7 @@
 import "./Auth.css";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function ForgotPasswordView() {
   const [email, setEmail] = useState("");
@@ -30,11 +30,13 @@ function ForgotPasswordView() {
           />
         </span>
         <button type="submit">Send Reset Link</button>
-        <p style={{
-          borderTop: '1px solid #ccc',
-          margin: '20px 0',
-          paddingTop: '10px',
-        }}>
+        <p
+          style={{
+            borderTop: "1px solid #ccc",
+            margin: "20px 0",
+            paddingTop: "10px",
+          }}
+        >
           Remember your password? <Link to="/">Sign in</Link>
         </p>
       </form>
