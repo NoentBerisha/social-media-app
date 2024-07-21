@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './components/auth/Login';
 import SignUp from './components/auth/SignUp';
 import ForgotPassword from './components/auth/ForgotPassword';
-
+import Main from './components/auth/Main/Main';
 function App() {
   return (
     <Router>
@@ -10,6 +10,7 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/ForgotPassword" element={<ForgotPassword />} />
+        <Route path="/Main" element={<Main />} />
       </Routes>
     </Router>
   );

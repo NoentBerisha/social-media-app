@@ -1,0 +1,67 @@
+/* Main.css */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px,20px;
+  background-color: #f0f0f0;
+}
+
+.outer-container {
+  width: 1900px;
+  height: 950px; 
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; 
+  overflow: hidden;
+  position: relative;
+}
+
+.nav-layout {
+  width: 100%;
+  height: 120px;
+  border-bottom: 1px solid #ccc;
+  background-color: aqua;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.main-layout {
+  display: flex;
+  flex: 1;
+  height: calc(100% - 120px);
+  overflow: hidden;
+}
+
+.Sidebar-Content,
+.RightSidebar-Content {
+  flex-shrink: 0;
+}
+
+.Sidebar-Content {
+  width: 300px;
+  background-color: antiquewhite;
+}
+
+.Main-Content {
+  flex: 1;
+  overflow: auto;
+  background-color: bisque;
+}
+
+.RightSidebar-Content {
+  width: 300px;
+  background-color: blanchedalmond;
+}
