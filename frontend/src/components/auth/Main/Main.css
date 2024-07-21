@@ -16,7 +16,7 @@ body {
 }
 
 .outer-container {
-  width: 1900px;
+  width: 1910px;
   height: 950px; 
   border: 1px solid #ccc;
   background-color: #fff;
@@ -64,4 +64,7 @@ body {
 .RightSidebar-Content {
   width: 300px;
   background-color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
