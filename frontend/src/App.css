@@ -62,9 +62,7 @@
 }
 
 .theme-toggle-btn {
-  position: fixed;
-  top: 20px;
-  right: 20px;
+  position: absolute;
   background-color: white;
   box-shadow: rgb(0 0 0 / 50%) 0px 0px 10px;
   color: var(--lightmode-icon-color);
@@ -72,7 +70,7 @@
   border-radius: 5px;
   padding: 5px 10px;
   cursor: pointer;
-
+  z-index: 100;
 }
 
 .theme-toggle-btn .icon {
