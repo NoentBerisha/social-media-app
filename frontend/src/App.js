@@ -26,6 +26,11 @@ function App() {
     let offsetX = 0;
     let offsetY = 0;
 
+
+  button.style.position = 'absolute';
+  button.style.top = '10px';
+  button.style.left = '10px';
+
     const mouseDownHandler = function (e) {
       offsetX = e.clientX - button.getBoundingClientRect().left;
       offsetY = e.clientY - button.getBoundingClientRect().top;
@@ -52,7 +57,16 @@ function App() {
 
   return (
     <>
-     <button
+     
+      <Router>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/ForgotPassword" element={<ForgotPassword />} />
+          <Route path="/Main" element={<Main />} />
+        </Routes>
+      </Router>
+      <button
         ref={buttonRef}
         onDoubleClick={toggleTheme}
         className="theme-toggle-btn"
@@ -66,15 +80,6 @@ function App() {
           <FaSun className="icon" />
         )}
       </button>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/SignUp" element={<SignUp />} />
-          <Route path="/ForgotPassword" element={<ForgotPassword />} />
-          <Route path="/Main" element={<Main />} />
-        </Routes>
-      </Router>
-     
     </>
   );
 }
