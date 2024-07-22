@@ -91,7 +91,7 @@ function RightSidebar() {
 
   return (
     <div className="right-sidebar">
-      <div className="latest-acitvity">
+      
         <span>
         <h3>Latest Activity</h3>
         <br></br>
@@ -106,7 +106,7 @@ function RightSidebar() {
           />
         ))}
         </span>
-      </div>
+     <br></br>
 
       <div className="active-friends">
       <h3>Active Friends</h3>
