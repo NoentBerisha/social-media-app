@@ -1,3 +1,27 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #e74c3c;
+  --input-border-color: #ccc;
+  --input-background-color: #f8f8f8;
+  --signup-login-button: #fcb40b;
+  --signup-login-text: #fff;
+  --background-color-for-login: #0a4d26;
+  --lightmode-icon-color: black;
+}
+
+[data-theme="dark"] {
+  --primary-color: #276478;
+  --secondary-color: #1a6848;
+  --accent-color: #992d22;
+  --input-border-color: #666;
+  --input-background-color: #333;
+  --signup-login-button: #e69500;
+  --signup-login-text: #eaeaea;
+  --background-color-for-login: #75eaa6;
+  --lightmode-icon-color: orange;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +59,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.theme-toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 50%) 0px 0px 10px;
+  color: var(--lightmode-icon-color);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+
+}
+
+.theme-toggle-btn .icon {
+  font-size: x-large;
 }

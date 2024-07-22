@@ -1,4 +1,5 @@
 /* Main.css */
+@import url('../../../App.css');
 
 html, body {
   height: 100%;
@@ -33,7 +34,7 @@ body {
   width: 100%;
   height: 120px;
   border-bottom: 1px solid #ccc;
-  background-color: aqua;
+  background-color: var(--primary-color);
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -52,7 +53,7 @@ body {
 
 .Sidebar-Content {
   width: 300px;
-  background-color: antiquewhite;
+  background-color: var(--input-backround-color);
 }
 
 .Main-Content {

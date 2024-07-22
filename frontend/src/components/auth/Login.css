@@ -9,7 +9,7 @@
 
 .container{
     width: 420px;
-    background: #1f5535;
+    background: var(--background-color-for-login);
     color: #fff;
     border-radius: 10px;
     padding: 30px 40px;
