@@ -103,6 +103,7 @@ function RightSidebar() {
               photoUrl={activity.photoUrl}
               isOnline={activity.isOnline}
               dropdownOptions={dropdownOptions}
+              showBadge={true}
             />
           ))}
         </div>
@@ -122,6 +123,7 @@ function RightSidebar() {
             photoUrl={friend.photoUrl}
             isOnline={friend.isOnline}
             dropdownOptions={dropdownOptions}
+            showBadge={true}
           />
         ))}
         </div>

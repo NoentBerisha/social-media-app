@@ -54,7 +54,7 @@ const Sidebar = () => {
             <h3>My Groups</h3>
             {groups.map((item, index) => (
               <li key={index} className="sidebar-item">
-              <ProfileIconComponent name = {item.name} photoUrl = {item.url} text = {item.name}/>
+              <ProfileIconComponent name = {item.name} photoUrl = {item.url} text = {item.name} showBadge={false}/>
             
               </li>
             ))}
