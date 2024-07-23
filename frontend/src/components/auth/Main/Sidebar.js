@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUserFriends, faUsers, faShoppingCart, faBookmark, faFileAlt, faStar, faEllipsisH } from '@fortawesome/free-solid-svg-icons';
 import './Sidebar.css'; // Assuming you have a CSS file for styling
-
+import ProfileIconComponent from './profile-icon/ProfileIconComponent';
 const mainMenuItems = [
   { name: 'Home', icon: faHome },
   { name: 'Friends', icon: faUserFriends },
@@ -54,8 +54,8 @@ const Sidebar = () => {
             <h3>My Groups</h3>
             {groups.map((item, index) => (
               <li key={index} className="sidebar-item">
-              <span className= "groups">{item.name}</span>
-              <img src={item.url} width='50px'></img>
+              <ProfileIconComponent name = {item.name} photoUrl = {item.url} text = {item.name}/>
+            
               </li>
             ))}
           </div>

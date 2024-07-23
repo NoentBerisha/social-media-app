@@ -19,17 +19,18 @@ function ProfileIconComponent({ name, photoUrl, isOnline, dropdownOptions, text 
         variant="dot"
         className={`avatar-badge ${isOnline ? '' : 'offline'}`}
       >
+      
         <Avatar alt={name} src={photoUrl} sx={{ width: '40px', height: '40px' }}/>
       </Badge>
       <p className="name" dangerouslySetInnerHTML={{ __html: text }}></p>
       {isDropdownVisible && (
         <div className="dropdown-menu">
-          {dropdownOptions.map((option, index) => (
+          {dropdownOptions && dropdownOptions.map((option, index) => (
             <div key={index} className="dropdown-item" onClick={() => setIsDropdownVisible(false)}>
-            <Link key={index} className="dropdown-item" to={option.url} >
-              {option.name}
-            </Link>
-            </div>
+             <Link className="dropdown-item" to={option.url}>
+                {option.name}
+                 </Link>
+         </div>
           ))}
         </div>
       )}
