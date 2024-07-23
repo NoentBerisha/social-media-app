@@ -7,6 +7,7 @@
 
 .profile-icon-component p {
     margin-left: 10px;
+    font-size: large;
 }
 .avatar-badge {
     position: relative;
@@ -16,6 +17,7 @@
     background-color: #44b700;
     color: #44b700;
     box-shadow: 0 0 0 2px white;
+    
   }
   
   .avatar-badge .MuiBadge-badge::after {

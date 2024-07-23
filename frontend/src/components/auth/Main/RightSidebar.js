@@ -92,23 +92,23 @@ function RightSidebar() {
   return (
     <div className="right-sidebar">
       
-        <span>
-        <h3>Latest Activity</h3>
-        <br></br>
-        {latestActivity.map((activity) => (
-          <ProfileIconComponent
-            key={activity.id}
-            name={activity.name}
-            text={activity.text}
-            photoUrl={activity.photoUrl}
-            isOnline={activity.isOnline}
-            dropdownOptions={dropdownOptions}
-          />
-        ))}
-        </span>
+        <div className="shadow">
+          <h3>Latest Activity</h3>
+          <br></br>
+          {latestActivity.map((activity) => (
+            <ProfileIconComponent
+              key={activity.id}
+              name={activity.name}
+              text={activity.text}
+              photoUrl={activity.photoUrl}
+              isOnline={activity.isOnline}
+              dropdownOptions={dropdownOptions}
+            />
+          ))}
+        </div>
      <br></br>
 
-      <div className="active-friends">
+      <div className="active-friends shadow">
       <h3>Active Friends</h3>
       <br></br> 
       <div className="sticky">

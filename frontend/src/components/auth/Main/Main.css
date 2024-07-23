@@ -59,12 +59,16 @@ body {
   flex: 1;
   overflow: auto;
   background-color: #f0f2f5;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+
 }
 
 .RightSidebar-Content {
-  width: 300px;
+  width: 370px;
   background-color: #f0f2f5;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+
 }
