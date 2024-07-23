@@ -43,6 +43,7 @@ body, html {
     border: 1px solid #ddd;
     border-radius: 20px;
     outline: none;
+    font-size: medium;
 }
 
 .status-options {

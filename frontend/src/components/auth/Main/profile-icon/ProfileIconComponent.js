@@ -40,8 +40,9 @@ function ProfileIconComponent({
           sx={{ width: "40px", height: "40px" }}
         />
       )}
-      <p className="name" dangerouslySetInnerHTML={{ __html: text }}></p>
-      {isDropdownVisible && (
+     {name &&
+      <p className="name" dangerouslySetInnerHTML={{ __html: text }}></p>}
+      {isDropdownVisible && dropdownOptions && (
         <div className="dropdown-menu">
           {dropdownOptions &&
             dropdownOptions.map((option, index) => (

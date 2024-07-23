@@ -3,6 +3,7 @@
     align-items: center;
     margin:5px;
     margin-bottom: 7px;
+    cursor: pointer;
 }
 
 .profile-icon-component p {
