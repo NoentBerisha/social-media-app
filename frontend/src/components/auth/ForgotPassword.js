@@ -1,7 +1,7 @@
 import "./Auth.css";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function ForgotPasswordView() {
   const [email, setEmail] = useState("");
@@ -12,7 +12,7 @@ function ForgotPasswordView() {
     console.log("Password reset email sent to: ", email);
     toast.success("Password reset email sent successfully");
   };
-
+  
   return (
     <div className="container" >
       <h1 style={{marginBottom:"30px"}}>Forgot Password</h1>

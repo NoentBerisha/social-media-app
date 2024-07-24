@@ -21,7 +21,6 @@ function App() {
   }
   return (
     <>
-     
       <Router>
         <Routes>
           <Route path="/" element={<Login />} />
@@ -40,6 +39,7 @@ function App() {
           <FaSun className="icon" />
         )}
       </button>
+
     </>
   );
 }
