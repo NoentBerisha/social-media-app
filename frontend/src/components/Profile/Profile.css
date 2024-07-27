@@ -1,0 +1,63 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px,20px;
+    background-color: #f0f0f0;
+  }
+  
+  .outer-container-Profile {
+    width: 1910px;
+    height: 950px; 
+    border: 1px solid #ccc;
+    background-color: #be2c2c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; 
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .nav-layout-Profile {
+    width: 100%;
+    height: 280px;
+    border-bottom: 1px solid #ccc;
+    background-color:#ba2525;
+    border-radius: 25px;
+  }
+  
+  .main-layout-Profile {
+    display: flex;
+    flex: 1;
+    height: calc(100% - 120px);
+    overflow: hidden;
+  }
+  
+  .Sidebar-Content-Profile {
+    flex-shrink: 0;
+  }
+  
+  .Sidebar-Content-Profile {
+    width: 600px;
+    background-color: rgb(196, 195, 193);
+  }
+  
+  .Main-Content-Profile {
+    flex: 1;
+    overflow: auto;
+    background-color: #f0f2f5;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  
+  }
+  

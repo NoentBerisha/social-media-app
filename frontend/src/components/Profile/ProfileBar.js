@@ -3,8 +3,8 @@ import { useNavigate, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faBell, faUserCircle, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { SlGraduation } from "react-icons/sl";
-import './Navbar.css';
-import ProfileIconComponent from './profile-icon/ProfileIconComponent';
+import './ProfileBar.css';
+import ProfileIconComponent from '../Main/profile-icon/ProfileIconComponent';
 
 const user = [
   {
@@ -13,7 +13,7 @@ const user = [
   }
 ]
 
-function Navbar() {
+function ProfileBar() {
   return (
     <div className="navbar">
       <div className="logo-icon-container">
@@ -28,7 +28,7 @@ function Navbar() {
         <FontAwesomeIcon icon={faBell} className="navbar-icon" />
         {/* <FontAwesomeIcon icon={faUserCircle} className="navbar-icon" /> */}
         <div style={{ transform: 'scale(1.3)', 'margin-left': '30px' }}>
-          <Link to='/Profile'>
+          <Link to='../Profile/Profile.js'>
            <ProfileIconComponent name={user[0].name} photoUrl={user[0].photoUrl} showBadge={false} text={user[0].name} /> 
           </Link>
 
@@ -38,4 +38,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default ProfileBar;

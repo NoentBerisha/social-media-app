@@ -4,6 +4,7 @@ import Login from "./components/auth/Login";
 import SignUp from "./components/auth/SignUp";
 import ForgotPassword from "./components/auth/ForgotPassword";
 import Main from "./components/Main/Main";
+import Profile from "./components/Profile/Profile"
 import "./App.css";
 import { FaSun, FaMoon } from "react-icons/fa";
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/SignUp" element={<SignUp />} />
           <Route path="/ForgotPassword" element={<ForgotPassword />} />
           <Route path="/Main" element={<Main />} />
+          <Route path="/Profile" element={<Profile />} />
         </Routes>
       </Router>
       <button
