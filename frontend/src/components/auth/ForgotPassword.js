@@ -12,22 +12,14 @@ function ForgotPasswordView() {
     console.log("Password reset email sent to: ", email);
     toast.success("Password reset email sent successfully");
   };
-
+  
   return (
-    <div className="container">
-      <h1 style={{
-          display:"flex",
-          alignItems:"center",
-          justifyContent:"center",
-          }}>Forgot Password</h1>
-      <br></br>
-      <br></br>
+    <div className="container" >
+      <h1 style={{marginBottom:"30px"}}>Forgot Password</h1>
       <form onSubmit={handleSubmit}>
-        <span className="input_label">
-          <label htmlFor="email">Email</label>
-          <input style={{
-            borderRadius:"10px"
-          }}
+        <span className="input_label" style={{padding:"15px,45px,15px,20px"}}>
+          <label htmlFor="email" style={{marginBottom:"10px"}}>Email</label>
+          <input
             type="email"
             id="email"
             name="email"
@@ -37,17 +29,12 @@ function ForgotPasswordView() {
           />
         </span>
         <button type="submit">Send Reset Link</button>
-        <p
-          style={{
-            margin: "20px 0",
-            paddingTop: "10px",
-          }}
-          
-        >
-          Remember your password? <Link style={{
-           color:"#ea9e24",
-           textDecoration:"none",
-          }}to="/">Sign in</Link>
+        <p style={{
+
+          margin: '20px 0',
+          paddingTop: '10px',
+        }}>
+          Remember your password? <Link to="/">Sign in</Link>
         </p>
       </form>
     </div>

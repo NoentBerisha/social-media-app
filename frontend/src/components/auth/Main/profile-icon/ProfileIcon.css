@@ -1,0 +1,69 @@
+.profile-icon-component{
+    display: flex;
+    align-items: center;
+    margin:5px;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+.profile-icon-component p {
+    margin-left: 10px;
+    font-size: large;
+}
+.avatar-badge {
+    position: relative;
+  }
+  
+  .avatar-badge .MuiBadge-badge {
+    background-color: #44b700;
+    color: #44b700;
+    box-shadow: 0 0 0 2px white;
+    
+  }
+  
+  .avatar-badge .MuiBadge-badge::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: ripple 1.2s infinite ease-in-out;
+    border: 1px solid currentColor;
+    content: "";
+  }
+  
+  .offline .MuiBadge-badge {
+    background-color: gray;
+    color: gray;
+  }
+
+  .profile-icon-component {
+    position: relative;
+    /* Other styles */
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%; /* Adjust as needed */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100px; /* Adjust as needed */
+    z-index: 1000;
+  }
+  
+  .dropdown-item {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+
+.dropdown-item :first-child{
+    text-decoration: none;
+    color: black;
+}
