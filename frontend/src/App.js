@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./components/auth/Login";
 import SignUp from "./components/auth/SignUp";
 import ForgotPassword from "./components/auth/ForgotPassword";
-import Main from "./components/auth/Main/Main";
+import Main from "./components/Main/Main";
 import "./App.css";
 import { FaSun, FaMoon } from "react-icons/fa";
 
