@@ -8,7 +8,7 @@ function Profile() {
   useEffect(() => {
     function adjustContainerSize() {
       const zoomLevel = window.devicePixelRatio || 1; 
-      const outerContainer = document.querySelector('.outer-container');
+      const outerContainer = document.querySelector('.outer-container-Profile');
 
       if (outerContainer) {
         const width = 1850 / zoomLevel;

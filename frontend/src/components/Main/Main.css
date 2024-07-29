@@ -58,7 +58,7 @@ body {
 .Main-Content {
   flex: 1;
   overflow: auto;
-  background-color: #f0f2f5;
+  background-color: var( --background-color--of--MainContent);
   -ms-overflow-style: none; 
   scrollbar-width: none; 
 
@@ -66,7 +66,7 @@ body {
 
 .RightSidebar-Content {
   width: 370px;
-  background-color: #f0f2f5;
+  background-color:var( --background-color--of--MainContent);
   display: flex;
   justify-content: center;
   align-items: flex-start;
