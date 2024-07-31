@@ -1,41 +1,40 @@
 import React from 'react';
-import { useNavigate, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faBell, faUserCircle, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { SlGraduation } from "react-icons/sl";
+import { faMapMarkerAlt, faEnvelope, faBriefcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import './ProfileBar.css';
-import ProfileIconComponent from '../Main/profile-icon/ProfileIconComponent';
 
-const user = [
-  {
-    name: "John Doe",
-    photoUrl: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?cs=srgb&dl=pexels-simon-robben-55958-614810.jpg&fm=jpg",
-  }
-]
+
 
 function ProfileBar() {
   return (
-    <div className="navbar">
-      <div className="logo-icon-container">
-        <SlGraduation className="logo-icon" />
-        <p className="logo-text">Social Media App</p>
+    <div className="profile-card">
+      <div className="header"></div>
+      <div className="avatar">
+        <img src="https://via.placeholder.com/100" alt="Avatar" />
       </div>
-      <div className="search-container">
-        <input type="text" placeholder="Search for friends, groups, pages" className="search-input" />
-        <FontAwesomeIcon icon={faSearch} className="search-icon" />
-      </div>
-      <div className="icons-container">
-        <FontAwesomeIcon icon={faBell} className="navbar-icon" />
-        {/* <FontAwesomeIcon icon={faUserCircle} className="navbar-icon" /> */}
-        <div style={{ transform: 'scale(1.3)', 'margin-left': '30px' }}>
-          <Link to='../Profile/Profile.js'>
-           <ProfileIconComponent name={user[0].name} photoUrl={user[0].photoUrl} showBadge={false} text={user[0].name} /> 
-          </Link>
-
-</div>
+      <div className="content">
+        <h2>Art Grantolli</h2>
+        <p>Product Designer @ Google</p>
+        <p><FontAwesomeIcon icon={faMapMarkerAlt} /> London, United Kingdom</p>
+        <div className="icons">
+          <FontAwesomeIcon icon={faEnvelope} />
+          <FontAwesomeIcon icon={faBriefcase} />
+          <FontAwesomeIcon icon={faGraduationCap} />
+        </div>
+        <div className="details">
+          <div className="work">
+            <h3>Work</h3>
+            <p>Osinski, Kohler and Bashirian 74-1025965</p>
+          </div>
+          <div className="education">
+            <h3>Education</h3>
+            <p>Harvard University Cambridge</p>
+          </div>
+        </div>
+        <button className="hire-me">Hire Me</button>
       </div>
     </div>
   );
-}
+};
 
 export default ProfileBar;

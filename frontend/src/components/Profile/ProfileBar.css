@@ -9,61 +9,76 @@
     border-top-right-radius: inherit;
 }
 
-.logo-icon-container {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-}
-
-.logo-icon {
-    font-size: 60px; 
-    margin-left: 80px;
-    margin-right: 10px; 
-}
-
-.logo-text {
-    font-size: 40px; 
-    margin: 0;
-}
-
-.search-container {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    max-width: 700px; 
-    height: 50px;
-    margin-right: 290px;
-    margin-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.search-input {
+.profile-card {
     width: 100%;
-    height: 55px;
-    padding: 200px; 
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    outline: none;
-    font-size: large;
-}
-
-.search-icon {
-    margin-left: -25px; 
-    color: #aaa;
-}
-
-.icons-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .header {
+    height: 100px;
+    background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+  }
+  
+  .avatar {
+    text-align: center;
+    margin-top: -50px;
+  }
+  
+  .avatar img {
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+  }
+  
+  .content {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .content h2 {
+    margin: 10px 0;
+  }
+  
+  .content p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .icons {
+    margin: 20px 0;
+  }
+  
+  .icons svg {
+    margin: 0 10px;
+    color: #666;
+  }
+  
+  .details {
     display: flex;
-    align-items: center;
-    margin-right: 50px; 
-}
-
-.navbar-icon {
-    margin-left: 20px; 
+    justify-content: space-around;
+    text-align: left;
+    padding: 0 20px;
+  }
+  
+  .details h3 {
+    margin-bottom: 10px;
+  }
+  
+  .hire-me {
+    background: #e94057;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
     cursor: pointer;
-    color: #333;
-    font-size: 50px;
-}
+    margin-top: 20px;
+  }
+  
+  .hire-me:hover {
+    background: #d63047;
+  }
 
 /*I dont think we need to change any colors here or sizes, I think it looks all right?. */
