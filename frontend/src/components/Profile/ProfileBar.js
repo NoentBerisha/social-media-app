@@ -14,8 +14,8 @@ function ProfileBar() {
       </div>
       <div className="content">
         <h2>Art Grantolli</h2>
-        <p>Product Designer @ Google</p>
-        <p><FontAwesomeIcon icon={faMapMarkerAlt} /> London, United Kingdom</p>
+        <p>Software Engineer</p>
+        <p><FontAwesomeIcon icon={faMapMarkerAlt} /> Prishtine, Kosovo</p>
         <div className="icons">
           <FontAwesomeIcon icon={faEnvelope} />
           <FontAwesomeIcon icon={faBriefcase} />
@@ -24,11 +24,11 @@ function ProfileBar() {
         <div className="details">
           <div className="work">
             <h3>Work</h3>
-            <p>Osinski, Kohler and Bashirian 74-1025965</p>
+            <p>Celonis, Prishtine</p>
           </div>
           <div className="education">
             <h3>Education</h3>
-            <p>Harvard University Cambridge</p>
+            <p>University for Business and Technology</p>
           </div>
         </div>
         <button className="hire-me">Hire Me</button>
