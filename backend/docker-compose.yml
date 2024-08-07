@@ -1,0 +1,26 @@
+version: '3.1'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: social-media-app-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: my_database
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+  adminer:
+    image: adminer
+    container_name: mot-adminer
+    restart: always
+    ports:
+      - 3307:8080
+
+volumes:
+  db_data:
