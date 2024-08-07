@@ -64,7 +64,7 @@
 }
 
 .modal-actions button:last-child {
-    background: var( --modal-second-button);
+    background: var(--modal-secondbutton);
     color: var(--modal-second-button-text);
 }
 
