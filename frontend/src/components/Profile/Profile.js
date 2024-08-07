@@ -2,13 +2,14 @@ import React, { useEffect } from 'react';
 import ProfileBar from './ProfileBar';
 import Sidebar from './Sidebar';
 import MainContent from './MainContent';
+import SliderComponent from './SliderComponent';
 import './Profile.css';
 
 function Profile() {
   useEffect(() => {
     function adjustContainerSize() {
       const zoomLevel = window.devicePixelRatio || 1; 
-      const outerContainer = document.querySelector('.outer-container');
+      const outerContainer = document.querySelector('.outer-container-Profile');
 
       if (outerContainer) {
         const width = 1850 / zoomLevel;
@@ -41,7 +42,7 @@ function Profile() {
           <Sidebar />
         </div>
         <div className="Main-Content-Profile">
-          <MainContent />
+          <SliderComponent />
         </div>
       </div>
     </div>

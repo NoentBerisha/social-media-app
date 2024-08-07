@@ -1,0 +1,80 @@
+.modal-backdrop, .modal-header, .modal-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--modal-backdrop);
+    z-index: 1000;
+}
+
+.modal-container {
+    background: var(--modal-container-background);
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modal-header {
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333; 
+}
+
+.modal-content {
+    margin: 20px 0;
+    font-size: 1rem;
+    color: var(--modal-button-text);
+}
+
+.modal-actions {
+    justify-content: flex-end;
+    align-items: normal;
+    gap: 10px;
+}
+
+.modal-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.modal-actions button:first-child {
+    background: var(--modal-firstbutton);
+    color: var(--modal-first-button-text);
+}
+
+.modal-actions button:last-child {
+    background: var( --modal-second-button);
+    color: var(--modal-second-button-text);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

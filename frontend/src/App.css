@@ -8,6 +8,13 @@
   --signup-login-text: #fff;
   --background-color-for-login: #0a4d26;
   --lightmode-icon-color: black;
+  --modal-backdrop: rgba(0, 0, 0, 0.7);
+  --modal-container-background: white;
+  --modal-button-text: #555;
+  --modal-firstbutton: #f0f0f0;
+  --modal-secondbutton: #007bff;
+  --modal-first-button-text: #333;
+  --modal-second-button-text: #f0f0f0;
 }
 
 [data-theme="dark"] {
@@ -20,6 +27,13 @@
   --signup-login-text: #eaeaea;
   --background-color-for-login: #75eaa6;
   --lightmode-icon-color: orange;
+  --modal-backdrop: rgba(0, 0, 0, 0.7);
+  --modal-container-background: #333;
+  --modal-button-text: #555;
+  --modal-first-button: #f0f0f0;
+  --modal-second-button: #007bff;
+  --modal-first-button-text: #f0f0f0;
+  --modal-second-button-text: #333;
 }
 
 .App {
