@@ -11,7 +11,7 @@ body, html, .main-content, .post-image {
 }
 
 .main-content {
-    max-width: 93%;
+    /* max-width: 93%; */
     margin: 0 auto;
     padding: 20px;
     background-color: #f0f2f5;
@@ -192,7 +192,7 @@ body, html, .main-content, .post-image {
     position: relative; 
     background-color: #fff;
     border-radius: 15px;
-    width: 90%;
+    width: 98%;
 }
 .profile-followers-container h2 {
     padding: 10px;
