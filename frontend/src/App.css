@@ -4,7 +4,7 @@
   --accent-color: #e74c3c;
   --input-border-color: #ccc;
   --input-background-color: #f8f8f8;
-  --signup-login-button: #fcb40b;
+  --signup-login-button: #ea9e24;
   --signup-login-text: #fff;
   --background-color-for-login: #0a4d26;
   --lightmode-icon-color: black;
@@ -15,6 +15,10 @@
   --modal-secondbutton: #007bff;
   --modal-first-button-text: #333;
   --modal-second-button-text: #f0f0f0;
+  --background-color-for-button:#ea9e24;
+  --background-color--of--MainContent: #f0f2f5;
+  --background-color--status--option: #e4e6eb;
+  --background-color--of--profileBar: #cbcaca;
 }
 
 [data-theme="dark"] {

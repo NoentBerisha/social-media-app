@@ -11,7 +11,7 @@ body, html {
     max-width: 93%; 
     margin: 0 auto;
     padding: 20px;
-    background-color: #f0f2f5;
+    background-color: var( --background-color--of--MainContent);
 }
 
 .status-update {
@@ -53,7 +53,7 @@ body, html {
 
 .status-option {
     padding: 10px 15px;
-    background-color: #e4e6eb;
+    background-color: var(--background-color--status--option);
     border: none;
     border-radius: 10px;
     cursor: pointer;

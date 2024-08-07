@@ -20,7 +20,7 @@ body, html, .main-content, .post-image {
 .status-update {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: var(--signup-login-text);
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -56,7 +56,7 @@ body, html, .main-content, .post-image {
 
 .status-option {
     padding: 10px 15px;
-    background-color: #e4e6eb;
+    background-color: var(--background-color--status--option);
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -70,7 +70,7 @@ body, html, .main-content, .post-image {
 }
 
 .post {
-    background-color: #fff;
+    background-color: var(--signup-login-text);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
