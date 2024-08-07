@@ -18,7 +18,7 @@
   }
   
   .header {
-    height: 150px;
+    height: 80px;
     background: linear-gradient(to right, #8a2387, #e94057, #f27121);
   }
   
@@ -36,6 +36,7 @@
   .content {
     text-align: center;
     padding: 20px;
+    margin-bottom: 150px;
   }
   
   .content h2 {
@@ -59,7 +60,7 @@
   .details {
     display: flex;
     justify-content: space-around;
-    text-align: left;
+    text-align: center;
     padding: 0 20px ;
   }
   
