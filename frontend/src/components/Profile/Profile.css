@@ -30,9 +30,10 @@ html, body {
   
   .nav-layout-Profile {
     width: 100%;
-    height: 500px;
-    border-bottom: 1px solid #ccc;
-    background-color:var(--background-color--of--profileBar);
+    height: 448px;
+    background-color: #f0f0f0;
+    border-block-end: none;
+    border-color:#f0f0f0;
     border-radius: 25px;
   }
   
