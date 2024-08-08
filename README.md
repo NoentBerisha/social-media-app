@@ -35,7 +35,7 @@ Ensure you have the following installed:
 
     Execute the following command to populate the database:
     ```bash
-    npx sequelize-cli db:migrate
+    npx sequelize-cli db:seed:all
     ```
 
 ### Accessing the Database
