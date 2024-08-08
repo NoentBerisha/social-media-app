@@ -28,14 +28,13 @@ Ensure you have the following installed:
 
     Apply the database migrations to set up the schema:
     ```bash
-    npx sequelize-cli db
-
+    npx sequelize-cli db:migrate
+    ```
 
 ### Accessing the Database
 
-    To view and manage your database, navigate to "http://localhost:3307" in your web browser.
-    Use the credentials defined in your "config.js" file to log in.
-
+To view and manage your database, navigate to [http://localhost:3307](http://localhost:3307) in your web browser.
+Use the credentials defined in your `config.js` file to log in.
 ### Configuration
 
 - **Database Host**: `localhost`
