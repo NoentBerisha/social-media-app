@@ -31,6 +31,13 @@ Ensure you have the following installed:
     npx sequelize-cli db:migrate
     ```
 
+3. **Populate Database**
+
+    Execute the following command to populate the database:
+    ```bash
+    npx sequelize-cli db:migrate
+    ```
+
 ### Accessing the Database
 
 To view and manage your database, navigate to [http://localhost:3307](http://localhost:3307) in your web browser.
